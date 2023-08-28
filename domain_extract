@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class domain{
+public static void main(String[] args){
+String a;
+String f="--> ";
+Scanner s = new Scanner(System.in);
+System.out.println("Enter your email ");
+a=s.nextLine();
+int b=a.length();
+for(int i=0;i<b;i++)
+{
+char c=a.charAt(i);
+if(c!='@'){
+
+}
+else{
+f=a.substring(i+1);
+break;
+}
+}
+System.out.println("Your Domain is " + f);
+}
+}
